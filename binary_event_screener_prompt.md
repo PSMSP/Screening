@@ -37,10 +37,11 @@ QURE held a Type A meeting with the FDA on January 9, 2026, to discuss the BLA p
 
 Every entry in the report should be at least this specific.
 
-## Sector and category constraints
+## Composition and category constraints
 
+- At least 50% of total entries must be pivotal earnings events as defined above
 - FDA decisions and FDA-related conversations (PDUFA dates, AdCom meetings, Type A/B meetings, CRL resolutions) may comprise no more than 30% of total entries
-- All other sector categories have no cap
+- All other non-earnings, non-FDA categories have no cap
 - Include stocks from at least 4 of these 7 categories:
 
 1. Biotechnology / Pharmaceuticals (FDA-related entries capped at 30%)
@@ -62,7 +63,7 @@ Search all of the following. Use specific search queries for each:
 - Non-FDA regulatory: search "FCC spectrum license decision 2026," "DOE contract award 2026," "NRC reactor approval 2026," "FAA launch license 2026"
 - Technology milestones: search "first launch 2026 stock," "demonstration test pass fail 2026," "proof of concept binary outcome 2026"
 - Government contracts: search "contract down-select 2026," "sole source award protest 2026"
-- Pivotal earnings: search "make or break earnings 2026," "must-prove quarter 2026 stock," "pivotal earnings inflection 2026," "turnaround quarter 2026"
+- Pivotal earnings (priority -- at least 50% of entries must come from this category): search "make or break earnings 2026," "must-prove quarter 2026 stock," "pivotal earnings inflection 2026," "turnaround quarter 2026," "prove it quarter 2026," "do or die earnings 2026," "existential earnings report 2026," "earnings inflection point stock 2026," "company must show profitability path 2026"
 - Financial Substacks and forums: search "binary event" site:substack.com 2026, "binary catalyst" site:seekingalpha.com 2026, "binary outcome" stock catalyst 2026
 
 ## Analysis framework
@@ -166,6 +167,7 @@ Confirm all of the following before generating the final report:
 - No routine earnings as sole event (pivotal/inflection earnings are allowed)
 - No broad macro/tariff events
 - All market caps are between $1B and $100B
+- At least 50% of entries are pivotal earnings events
 - FDA-related entries do not exceed 30% of total entries
 - At least 4 sector categories represented
 - Every entry has at least one cited source URL
