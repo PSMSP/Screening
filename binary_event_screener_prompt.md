@@ -4,9 +4,11 @@ Paste everything below the dashed line into a new Claude AI conversation.
 
 --------------------------------------------------------------------------------
 
-Generate a professional equity research report identifying 8-15 US-listed public equities that have a specific, upcoming binary event within the next 1-9 months. Use web search extensively for every claim. Do not rely on training data for dates, prices, or event details.
+Language: English. Respond entirely in English. Begin executing immediately. If ambiguity arises during research, use your best judgment and note the assumption in the relevant entry rather than stopping to ask.
 
-A binary event is a single, discrete, time-bound decision by an external authority (court, regulator, agency, review board) or outcome of a pass/fail milestone (technology demonstration, clinical readout) that will materially re-rate the stock in one of two directions: significantly up or significantly down.
+Generate a professional equity research report identifying 8-15 US-listed public equities with market capitalizations between $1 billion and $100 billion that have a specific, upcoming binary event within the next 1-9 months. Use web search extensively for every claim. Do not rely on training data for dates, prices, or event details.
+
+A binary event is a single, discrete, time-bound decision by an external authority (court, regulator, agency, review board) or outcome of a pass/fail milestone (technology demonstration, clinical readout, pivotal earnings disclosure) that will materially re-rate the stock in one of two directions: significantly up or significantly down.
 
 ## What qualifies as a binary event
 
@@ -16,16 +18,16 @@ A binary event is a single, discrete, time-bound decision by an external authori
 - A first-of-its-kind technology demonstration where success validates a business model and failure invalidates it (rocket test, satellite deployment, reactor criticality)
 - A government contract down-select or award decision where a company is a finalist
 - A clinical data readout with a binary trial design (met primary endpoint or did not)
+- A pivotal earnings release where the quarter is existentially important to the company's trajectory -- not routine guidance, but situations where the company must demonstrate a turnaround is working, a key product is scaling, a cash runway is sufficient to avoid dilution, or where management will disclose the outcome of a specific non-earnings event (contract win, regulatory update, litigation resolution) on the call. The earnings must represent a make-or-break inflection point, not a normal reporting cycle.
 
 ## What does NOT qualify
 
-- Routine quarterly earnings as the sole event
+- Routine quarterly earnings where the company simply reports results and provides guidance
 - Announced mergers or acquisitions pending regulatory close (merger arbitrage)
 - Broad macro events affecting hundreds of stocks (tariff rulings, Fed rate decisions, trade policy)
 - Vague catalysts ("AI adoption could accelerate," "management expects growth")
 - Events that already occurred
-
-Exception: if a specific binary event result will be disclosed on an earnings call (e.g., a trial verdict, contract award, or regulatory decision announced during the call), that qualifies because the underlying event is the catalyst, not the earnings themselves.
+- Companies with market caps below $1 billion or above $100 billion
 
 ## Anchor example (match this quality bar)
 
@@ -35,11 +37,13 @@ QURE held a Type A meeting with the FDA on January 9, 2026, to discuss the BLA p
 
 Every entry in the report should be at least this specific.
 
-## Sector diversity requirement
+## Sector and category constraints
 
-Include stocks from at least 4 of these 7 categories. No single category may exceed 40% of total entries:
+- FDA decisions and FDA-related conversations (PDUFA dates, AdCom meetings, Type A/B meetings, CRL resolutions) may comprise no more than 30% of total entries
+- All other sector categories have no cap
+- Include stocks from at least 4 of these 7 categories:
 
-1. Biotechnology / Pharmaceuticals
+1. Biotechnology / Pharmaceuticals (FDA-related entries capped at 30%)
 2. Technology / Semiconductors
 3. Aerospace / Defense
 4. Energy / Nuclear / Utilities
@@ -47,15 +51,18 @@ Include stocks from at least 4 of these 7 categories. No single category may exc
 6. Legal / Litigation-Driven
 7. Financial / Regulatory
 
+Note: biotech/pharma stocks with NON-FDA binary events (e.g., a clinical data readout, a patent trial, a pivotal earnings release) do not count toward the 30% FDA cap.
+
 ## Research sources to search
 
 Search all of the following. Use specific search queries for each:
 
-- FDA calendars: BioPharmCatalyst.com, CatalystAlert.io, Benzinga FDA Calendar -- focus on AdCom meetings, CRL resolutions, PDUFA dates for lead pipeline assets of clinical-stage companies. Limit biotech to 2-4 of the highest-impact events.
+- FDA calendars: BioPharmCatalyst.com, CatalystAlert.io, Benzinga FDA Calendar -- focus on AdCom meetings, CRL resolutions, PDUFA dates for lead pipeline assets of clinical-stage companies. Limit to the highest-impact events only, respecting the 30% cap.
 - Court dockets: search "[company] trial verdict 2026," "patent trial billion dollar ruling 2026," "antitrust ruling 2026 stock impact"
 - Non-FDA regulatory: search "FCC spectrum license decision 2026," "DOE contract award 2026," "NRC reactor approval 2026," "FAA launch license 2026"
 - Technology milestones: search "first launch 2026 stock," "demonstration test pass fail 2026," "proof of concept binary outcome 2026"
 - Government contracts: search "contract down-select 2026," "sole source award protest 2026"
+- Pivotal earnings: search "make or break earnings 2026," "must-prove quarter 2026 stock," "pivotal earnings inflection 2026," "turnaround quarter 2026"
 - Financial Substacks and forums: search "binary event" site:substack.com 2026, "binary catalyst" site:seekingalpha.com 2026, "binary outcome" stock catalyst 2026
 
 ## Analysis framework
@@ -89,11 +96,7 @@ For every stock, apply this five-step meta-cognitive reasoning procedure. Show a
 
 Sort by expected event date, soonest first.
 
-### Section 2: Methodology Note
-
-3-4 sentences explaining the meta-cognitive framework, research sources consulted, and the date of research.
-
-### Section 3: Detailed Stock Analyses
+### Section 2: Detailed Stock Analyses
 
 For each stock, use this template:
 
@@ -140,12 +143,13 @@ E. REFLECT
 
 ---
 
-### Section 4: Disclaimer
+### Section 3: Disclaimer
 
 "This report is for informational and educational purposes only. It does not constitute financial advice, a recommendation to buy or sell any security, or an offer to transact. Binary events are inherently unpredictable. Past regulatory, legal, or technical outcomes do not guarantee future results. Conduct independent due diligence before making any investment decisions."
 
 ## Formatting rules
 
+- Render the entire report in Times New Roman font at 10pt size. If outputting as markdown, wrap the full output in: <div style="font-family: 'Times New Roman', Times, serif; font-size: 10pt;">...</div>
 - Professional, institutional research tone throughout
 - No emojis anywhere
 - No casual language or exclamation points
@@ -157,16 +161,18 @@ E. REFLECT
 ## Quality checklist (verify before outputting)
 
 Confirm all of the following before generating the final report:
-- Every entry has a specific, dated binary event with an identifiable decision-maker
+- Every entry has a specific, dated binary event with an identifiable decision-maker or pass/fail condition
 - No merger arbitrage plays
-- No routine earnings as sole event
+- No routine earnings as sole event (pivotal/inflection earnings are allowed)
 - No broad macro/tariff events
+- All market caps are between $1B and $100B
+- FDA-related entries do not exceed 30% of total entries
 - At least 4 sector categories represented
-- No sector exceeds 40% of entries
 - Every entry has at least one cited source URL
 - All 5 meta-cognitive steps (A-E) completed for every entry
 - All prices, market caps, and dates sourced from current web search
 - Zero emojis in the entire document
 - 8-15 total stocks
+- Report does NOT contain a methodology section
 
 Generate the report now.
